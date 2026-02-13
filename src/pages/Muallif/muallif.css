@@ -1,0 +1,15 @@
+.author {
+  margin-top: 20px;
+  color: #414555;
+  font-weight: 400;
+  line-height: 41px;
+  font-size: 26px;
+}
+
+
+@media screen and (max-width: 576px) {
+  .author{
+    font-size: 18px;
+  }
+  
+}

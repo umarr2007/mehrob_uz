@@ -1,0 +1,202 @@
+ .iyman_wrapper {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.iyman_left {
+  max-width: 100%;
+  background-color: #c6f7e9;
+}
+
+.iyman_right {
+  background-color: #c6f7e9;
+  padding: 20px;
+  width: 100%;
+}
+
+.ant-tabs-left > .ant-tabs-content-holder,
+.ant-tabs-left {
+  border-left: none !important;
+}
+
+.ant-tabs-ink-bar {
+  display: none !important;
+}
+
+.iyman_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #004c44;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 10px;
+  
+}
+
+.iyman_text {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  color: #000000d9;
+  text-align: justify;
+}
+
+.iyman {
+  color: #046f5a;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 41px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.iyman_description {
+  color: #046f5a;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 41px;
+}
+
+.iyman_texts {
+  font-weight: 500;
+  color: #046f5a;
+  font-size: 26px;
+  line-height: 41px;
+  letter-spacing: 1.56px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.namaz_title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #004440;
+  text-align: justify;
+  text-transform: uppercase;
+}
+
+.empty_text {
+  color: #ff3838;
+  font-weight: 500;
+  line-height: 38px;
+  font-size: 24px;
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.tabs_scroll {
+  max-height: 600px;
+  overflow: auto;
+}
+
+.ant-tabs-tab {
+  margin: 0 !important;
+  padding: 10px !important;
+}
+
+.roza_text {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  color: #000000d9;
+  text-align: justify;
+  padding-top: 30px;
+}
+
+.text_table .ant-table {
+  background: transparent !important;
+}
+
+.text_table .ant-table-container {
+  border: none !important;
+}
+
+.text_table .ant-table-thead > tr > th {
+  background: transparent !important;
+  border: none !important;
+  padding: 6px 0px !important;
+}
+
+.text_table .ant-table-tbody > tr > td {
+  border: none !important;
+  padding: 6px 0px !important;
+}
+
+.iyman_button[class*="ant-btn-primary"] {
+  background-color: #c6f7e9 !important;
+  border-color: #c6f7e9 !important;
+  margin-top: 12px;
+  color: #004c44 !important;
+}
+
+@media screen and (max-width: 992px) {
+  .iyman_wrapper {
+    flex-direction: column;
+  }
+  .iyman_sidebar {
+    height: auto;
+  }
+
+  .iyman_left{
+    display: none;
+  }
+
+  .iyman_title {
+    font-size: 18px;
+  }
+  .iyman_text {
+    padding-top: 20px;
+    font-size: 16px;
+  }
+  .iyman_right {
+    padding: 10px;
+  }
+  .iyman_description {
+    text-align: center;
+  }
+  .iyman_texts {
+    text-align: justify;
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .iyman_title {
+    font-size: 16px;
+  }
+  .iyman_text {
+    padding-top: 20px;
+    font-size: 14px;
+  }
+  .iyman_right {
+    padding: 10px;
+  }
+  .iyman_description {
+    text-align: center;
+  }
+  .iyman_texts {
+    text-align: justify;
+    font-size: 18px;
+  }
+
+  .text_table .ant-table-thead > tr > th {
+    font-size: 12px !important;
+    padding: 4px 0px !important;
+    text-align: center;
+  }
+
+  .text_table .ant-table-tbody > tr > td {
+    font-size: 12px !important;
+    padding: 4px 0px !important;
+    text-align: center;
+  }
+} 
+

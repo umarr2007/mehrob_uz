@@ -1,0 +1,9 @@
+.iyman_sidebar {
+  flex-shrink: 0;
+  max-width: 100%;
+  width: 320px;
+  height: 600px;
+  background-color: #c6f7e9;
+}
+
+

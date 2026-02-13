@@ -1,0 +1,46 @@
+.dropdown_item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1px;
+}
+
+.dropdown_mobile {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.ant-dropdown-menu-item:has(.dropdown_mobile) {
+  display: none !important;
+}
+
+.ant-dropdown-menu {
+  width: 100%;
+}
+
+.item_title {
+  font-weight: 400;
+  color: #004c44;
+  font-size: 15px;
+  margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .ant-dropdown-menu-item:has(.dropdown_mobile) {
+    display: block !important;
+  }
+  .ant-dropdown-menu {
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .ant-dropdown-menu {
+    max-height: 380px;
+  }
+}
+
+

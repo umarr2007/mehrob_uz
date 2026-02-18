@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Tabs, Spin } from "antd";
+import { Tabs, Spin, Button } from "antd";
 import { useNavigate } from "react-router-dom";
 import "./blog.css";
 
@@ -46,32 +46,10 @@ const Blogs = () => {
         items={[
           { key: "ENLIGHTENMENT", label: "Enlightenment" },
           { key: "VISIT", label: "Tashriflar" },
+          { key: "NEW", label: "Yangiliklar" },
           { key: "ARTICLE", label: "Maqolalar" },
         ]}
       />
-      {/* <div 
-        key={id}
-        onClick={() => navigate(`/blog/${id}`)}
-        className="news_wrapper"
-      >
-        {blogs.map(({ id, photo, name, title, createdAt, views }) => (
-          <div>
-            <img
-              className="tashrif_img"
-              src={getImageUrl(photo?.uuid)}
-              alt={name?.uz}
-            />
-            <div className="blogs_info">
-              <h3 className="blogs_title">{name?.uz}</h3>
-              <p className="blogs_date">
-                {new Date(createdAt).toLocaleDateString()}
-              </p>
-              <p className="blogs_desc">{title?.uz}</p>
-              <p className="blogs_views">👁 {views}</p>
-            </div>
-          </div>
-        ))}
-      </div> */}
 
       {blogs.map(({ id, photo, name, title, createdAt, views }) => (
         <div
@@ -100,6 +78,15 @@ const Blogs = () => {
           </div>
         </div>
       ))}
+      <div className="all_btn_wrapper">
+        <Button
+          className="hammasi_btn"
+          onClick={() => navigate("/maqolalar")}
+          type="primary"
+        >
+          Hammasi
+        </Button>
+      </div>
     </div>
   );
 };

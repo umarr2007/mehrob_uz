@@ -1,0 +1,44 @@
+.carousel_container {
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+ 
+  
+  /* Each slide */
+  .carousel_item {
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .carousel_image {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 0 auto 5px auto;
+    transition: transform 0.2s ease;
+  }
+  
+  .carousel_item:hover .carousel_image {
+    transform: scale(1.05);
+  }
+  
+  .carousel_title {
+    font-size: 12px;
+    max-width: 75px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0 auto;
+  }
+  
+  /* Swiper scrollbar */
+  .swiper-scrollbar {
+    background: rgba(0,0,0,0.1);
+    height: 4px !important;
+  }
+  .swiper-scrollbar-drag {
+    background: rgba(0,0,0,0.4);
+  }
+  

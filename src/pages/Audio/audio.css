@@ -1,4 +1,4 @@
-.audio_page {
+/* .audio_page {
   padding-top: 20px;
   padding-bottom: 40px;
 }
@@ -40,7 +40,7 @@
   margin-top: 15px;
 }
 
-/* Title */
+
 .section_title {
   font-size: 18px;
   font-weight: 600;
@@ -85,7 +85,6 @@
   color: gray;
 }
 
-/* Responsive */
 @media (max-width: 1000px) {
   .audio_layout {
     flex-direction: column;
@@ -105,5 +104,127 @@
 
   .audio_detail_img {
     height: 220px;
+  }
+} */
+
+/* ========== LAYOUT ========= */
+.audio_page {
+  padding: 40px 0;
+}
+
+.audio_layout {
+  display: flex;
+  gap: 40px;
+}
+
+/* ========== SIDEBAR ========= */
+.video_sidebar {
+  width: 260px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  height: fit-content;
+}
+
+.video_tabs .ant-tabs-nav {
+  margin: 0;
+}
+
+.video_tabs .ant-tabs-tab {
+  font-weight: 500;
+  font-size: 14px;
+  padding: 12px 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.video_tabs .ant-tabs-tab:hover {
+  background-color: #f3f6ff;
+  color: #1677ff;
+}
+
+.video_tabs .ant-tabs-tab-active {
+  background: linear-gradient(135deg, #1677ff, #4096ff);
+  color: #fff !important;
+  box-shadow: 0 6px 18px rgba(22, 119, 255, 0.3);
+}
+
+.audio_wrapper {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* ========== AUDIO CARD ========= */
+.audio {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.audio:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.video_img_box {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+
+.video_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play_icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* ========== AUDIO TEXT ========= */
+.audio_text {
+  padding: 12px 15px;
+}
+
+.audio_text_title {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  color: #f50;
+}
+
+.audio_date {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* ========== RESPONSIVE ========= */
+@media (max-width: 992px) {
+  .audio_layout {
+    flex-direction: column;
+  }
+
+  .video_sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .audio_wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }

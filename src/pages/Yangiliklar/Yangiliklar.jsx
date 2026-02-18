@@ -47,7 +47,7 @@ function Yangiliklar() {
               <p className="news_date"> 👁 {i.views}</p>
             </div>
             <div
-              className="news_description"
+              className="news_desc"
               dangerouslySetInnerHTML={{ __html: i?.description?.uz }}
             ></div>
           </div>

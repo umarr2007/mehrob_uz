@@ -4,11 +4,6 @@ import { AiOutlineMenu } from "react-icons/ai";
 import ReactCountryFlag from "react-country-flag";
 import { Link } from "react-router-dom";
 export const MENU = [
-  // {
-  //   label: "Bosh sahifa",
-  //   path: "/",
-  // },
-
   {
     label: (
       <Link to="/" className="navbar_link">
@@ -64,9 +59,6 @@ export const MENU = [
       },
     ],
   },
-  // { label: "Yangiliklar" },
-  // { label: "Tashriflar" },
-  // { label: "Maqolalar" },
 
   {
     label: (
@@ -118,9 +110,7 @@ export const MENU = [
           </Link>
         ),
       },
-      // { label: "Audio", icon: "/audio.svg" },
-      // { label: "Rasmlar", icon: "/rasm.svg" },
-      
+
       {
         label: (
           <Link to="/rasmlar" className="dropdown_item">
@@ -128,7 +118,7 @@ export const MENU = [
             <span className="item_title">Rasmlar</span>
           </Link>
         ),
-      }
+      },
     ],
   },
 
@@ -229,7 +219,7 @@ export const RIGHT_MENU = [
 
       {
         label: (
-          <Link className="dropdown_mobile">
+          <Link to={"/news"} className="dropdown_mobile">
             <img src="/aqida.svg" alt="" />
             <span className="item_title">Yangiliklar</span>
           </Link>
@@ -238,140 +228,140 @@ export const RIGHT_MENU = [
 
       {
         label: (
-          <div className="dropdown_mobile">
+          <Link to={"/tashriflar"} className="dropdown_mobile">
             <img src="/fiqh.svg" alt="" />
             <span className="item_title">Tashriflar</span>
-          </div>
+          </Link>
         ),
       },
 
       {
         label: (
-          <div className="dropdown_mobile">
+          <Link to={"/maqolalar"} className="dropdown_mobile">
             <img src="/aqida.svg" alt="" />
             <span className="item_title">Maqolalar</span>
-          </div>
+          </Link>
         ),
       },
 
       {
         label: (
-          <div className="dropdown_mobile">
+          <Link to={"/video"} className="dropdown_mobile">
             <img src="/video.svg" alt="" />
             <span className="item_title">Videolar</span>
-          </div>
+          </Link>
         ),
       },
 
       {
         label: (
-          <div className="dropdown_mobile">
+          <Link to={"/audio"} className="dropdown_mobile">
             <img src="/audio.svg" alt="" />
             <span className="item_title">Audiolar</span>
-          </div>
+          </Link>
         ),
       },
 
       {
         label: (
-          <div className="dropdown_mobile">
+          <Link to={"/rasmlar"} className="dropdown_mobile">
             <img src="/rasm.svg" alt="" />
             <span className="item_title">Rasmlar</span>
-          </div>
+          </Link>
         ),
       },
 
       {
         label: (
-          <div className="dropdown_mobile">
+          <Link to={"/muallif"} className="dropdown_mobile">
             <img src="/iymon.svg" alt="" />
             <span className="item_title">Muallif</span>
-          </div>
+          </Link>
         ),
       },
 
       {
         label: (
-          <div className="dropdown_item">
+          <Link to="/fiqh" className="dropdown_item">
             <img src="/fiqh.svg" alt="" />
             <span className="item_title">Fiqh</span>
-          </div>
+          </Link>
         ),
       },
       {
         label: (
-          <div className="dropdown_item">
+          <Link to={"/aqida"} className="dropdown_item">
             <img src="/aqida.svg" alt="" />
             <span className="item_title">Aqida</span>
-          </div>
+          </Link>
         ),
       },
       {
         label: (
-          <div className="dropdown_item">
+          <Link to={"/quran"} className="dropdown_item">
             <img src="/fiqh.svg" alt="" />
             <span className="item_title">Qur'on</span>
-          </div>
+          </Link>
         ),
       },
       {
         label: (
-          <div className="dropdown_item">
+          <Link to={"/tafsir"} className="dropdown_item">
             <img src="/aqida.svg" alt="" />
             <span className="item_title">Tafsir</span>
-          </div>
+          </Link>
         ),
       },
       {
         label: (
-          <div className="dropdown_item">
+          <Link to={"/ayollar"} className="dropdown_item">
             <img src="/women.svg" alt="" />
             <span className="item_title">Ayollar sahifasi</span>
-          </div>
+          </Link>
         ),
       },
       {
         label: (
-          <div className="dropdown_item">
+          <Link to={"/islom-tarixi"} className="dropdown_item">
             <img src="/iymon.svg" alt="" />
             <span className="item_title">Islom tarixi</span>
-          </div>
+          </Link>
         ),
       },
 
       {
         label: (
-          <div className="dropdown_item">
+          <Link to={"/ulug-siymolar"} className="dropdown_item">
             <img src="/siymolar.svg" alt="" />
             <span className="item_title">Ulug'siymolar</span>
-          </div>
+          </Link>
         ),
       },
 
       {
         label: (
-          <div className="dropdown_item">
+          <Link to={"/siyrat"} className="dropdown_item">
             <img src="/siyrat.svg" alt="" />
             <span className="item_title">Siyrat</span>
-          </div>
+          </Link>
         ),
       },
 
       {
         label: (
-          <div className="dropdown_item">
+          <Link to={"/rivoyatlar"} className="dropdown_item">
             <img src="/silsila.svg" alt="" />
             <span className="item_title">Rivoyatlar silsilasi</span>
-          </div>
+          </Link>
         ),
       },
 
       {
         label: (
-          <div className="dropdown_item">
-            <img src="/question.svg" alt="" />
-            <span className="item_title">Savol-javoblar</span>
-          </div>
+          <Link to={"/privacy-policy"} className="dropdown_item">
+            <img className="img_app" src="/app.svg" alt="" />
+            <span className="item_title">Mobile Ilova</span>
+          </Link>
         ),
       },
     ],

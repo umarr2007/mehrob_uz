@@ -18,7 +18,6 @@ function DetailTab({ activeTab }) {
   return (
     <div>
       <h2 className="iyman_title">{singleData?.name?.uz}</h2>
-
       <div
         dangerouslySetInnerHTML={{
           __html: singleData?.description?.uz,

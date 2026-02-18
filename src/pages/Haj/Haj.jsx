@@ -5,7 +5,7 @@ import axios from "axios";
 import DetailTab from "../Iymon/DetailTab";
 
 function Roza() {
-  const [activeKey, setActiveKey] = useState("4q");
+  const [activeKey, setActiveKey] = useState("4");
   const [tabData, setTabData] = useState([]);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
   useEffect(() => {

@@ -1,0 +1,43 @@
+.pagination_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* Pagination button style */
+.pagination_wrapper .ant-pagination-item {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+/* Active page */
+.pagination_wrapper .ant-pagination-item-active {
+  background: #0f4f44;
+}
+
+.pagination_wrapper .ant-pagination-item-active a {
+  color: white !important;
+  font-weight: 700;
+}
+
+/* Prev next buttons */
+.pagination_wrapper .ant-pagination-prev,
+.pagination_wrapper .ant-pagination-next {
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .pagination_wrapper {
+    margin-top: 20px;
+  }
+
+  .pagination_wrapper .ant-pagination-item {
+    min-width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+}

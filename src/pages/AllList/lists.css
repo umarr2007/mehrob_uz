@@ -1,0 +1,27 @@
+/* src/components/AsmaulHusna.css */
+.asmaul-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}

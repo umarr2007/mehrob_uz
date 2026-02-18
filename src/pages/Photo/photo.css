@@ -1,0 +1,123 @@
+/* ========== LAYOUT ========= */
+.video_page {
+  padding: 40px 0;
+}
+
+.video_tabs {
+  margin-bottom: 30px;
+}
+
+/* ===== SIDEBAR / TABS ===== */
+.video_tabs .ant-tabs-nav {
+  margin: 0;
+}
+
+.video_tabs .ant-tabs-tab {
+  font-weight: 500;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.video_tabs .ant-tabs-tab:hover {
+  background-color: #f3f6ff;
+  color: #1677ff;
+}
+
+.video_tabs .ant-tabs-tab-active {
+  background: linear-gradient(135deg, #1677ff, #4096ff);
+  color: #fff !important;
+  box-shadow: 0 6px 18px rgba(22, 119, 255, 0.3);
+}
+
+/* ===== PHOTO GRID ===== */
+.audio_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+/* ===== PHOTO CARD ===== */
+.audio {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.audio:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.audio img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.ant-tabs-nav {
+  width: 100%;
+}
+.audio h3 {
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* ===== PHOTOID DETAIL ===== */
+.blogs_img_wrapper {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+/* ===== RELATED PHOTOS ===== */
+.audio_img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.audio_text {
+  padding: 10px;
+}
+
+.audio_title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #222;
+}
+
+/* Card hover for related photos */
+.ant-card {
+  transition: 0.3s;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .audio_wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}

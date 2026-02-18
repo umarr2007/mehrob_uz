@@ -16,7 +16,7 @@ function Maqolalar() {
     axios
       .post("https://sofft.uz/api/v1/client/blogs/pageable", {
         page: pagination - 1,
-        perPage: 8,
+        perPage: 10,
         sort: { name: "createdAt", direction: "desc" },
         search: [
           { key: "type", operation: "=", value: "ARTICLE", type: "STRING" },
@@ -32,6 +32,7 @@ function Maqolalar() {
   }, [pagination]);
   return (
     <div className="container">
+      <h2 className="news">Maqolalar</h2>
       {maqolalar.map((i) => (
         <div
           key={i.id}
@@ -57,7 +58,14 @@ function Maqolalar() {
           </div>
         </div>
       ))}
-
+      <div className="pagination_wrapper">
+        <Pagination
+          current={pagination}
+          total={total}
+          onChange={(e) => setPagination(e)}
+          showSizeChanger={false}
+        />
+      </div>
     </div>
   );
 }

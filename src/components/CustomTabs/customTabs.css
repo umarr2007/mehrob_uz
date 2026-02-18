@@ -1,0 +1,58 @@
+/* ===============================
+   FAQAT FIQH TABLARIGA
+================================= */
+
+.fiqh_tabs .ant-tabs-ink-bar {
+  display: none !important;
+}
+
+.fiqh_tabs .ant-tabs-nav::before {
+  display: none !important;
+}
+
+/* ===============================
+   TABLARNI O‘RTAGA
+================================= */
+
+.fiqh_tabs .ant-tabs-nav-list {
+  width: 100%;
+  display: flex !important;
+  margin-top: 15px;
+  gap: 20px;
+  /* justify-content: center; */
+}
+
+.fiqh_tabs .ant-tabs-tab {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  padding: 8px 18px !important;
+  margin: 0 6px !important;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+/* TEXT */
+.fiqh_tabs .tab_text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 31px;
+  color: #0f4f44;
+  transition: all 0.2s ease;
+}
+
+/* ACTIVE */
+.fiqh_tabs .ant-tabs-tab-active {
+  background-color: #0f4f44 !important;
+  border-radius: 5px !important;
+}
+
+.fiqh_tabs .ant-tabs-tab-active .tab_text {
+  color: #ffffff !important;
+}
+
+/* HOVER */
+.fiqh_tabs .ant-tabs-tab:hover {
+  background: rgba(15, 79, 68, 0.08);
+  border-radius: 8px;
+}

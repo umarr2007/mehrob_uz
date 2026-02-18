@@ -13,7 +13,7 @@ function Photo() {
   const getImageUrl = (uuid) =>
     uuid ? `https://sofft.uz/api/v1/references/download/${uuid}` : "";
 
-  // Categories
+  
   useEffect(() => {
     axios
       .get("https://sofft.uz/api/v1/client/media-categories/list/PHOTO")
@@ -25,7 +25,7 @@ function Photo() {
       .catch((err) => console.log(err));
   }, []);
 
-  // Photos per category
+
   useEffect(() => {
     if (!activephoto) return;
 
@@ -49,15 +49,18 @@ function Photo() {
 
   return (
     <div className="container video_page">
-      <Tabs
-        className="video_tabs"
-        activeKey={activephoto}
-        onChange={(key) => setActivephoto(key)}
-        items={photocategory?.map((item) => ({
-          label: item?.name?.uz,
-          key: String(item?.id),
-        }))}
-      />
+      <div className="video_sidebar">
+        <Tabs
+          className="video_tabs"
+          tabPlacement="left"
+          activeKey={activephoto}
+          onChange={(key) => setActivephoto(key)}
+          items={photocategory?.map((item) => ({
+            label: item?.name?.uz,
+            key: String(item?.id),
+          }))}
+        />
+      </div>
 
       <div className="audio_wrapper">
         {photo.map((i) => (

@@ -17,6 +17,20 @@ import Audio from "../pages/Audio/Audio";
 import AudioId from "../pages/Audio/AudioId";
 import Photo from "../pages/Photo/Photo";
 import PhotoId from "../pages/Photo/PhotoId";
+import Fiqh from "../pages/Fiqh/Fiqh";
+import Aqida from "../pages/Aqida/Aqida";
+import Quran from "../pages/Quran/Quran";
+import Tafsir from "../pages/Tafsir/Tafsir";
+import Mojiza from "../pages/Rasululloh mo'jizalar/Mojiza";
+import Ayollar from "../pages/Ayollar/Ayollar";
+import IslomTarixi from "../pages/Islom-Tarix/IslomTarixi";
+import UlugSiymolar from "../pages/Ulug'-Siymolar/UlugSiymolar";
+import Siyrat from "../pages/Siyrat/Siyrat";
+import Rivoyatlar from "../pages/Rivoyatlar/Rivoyatlar";
+import Savollar from "../pages/Savol-Javob/Savollar";
+import MobilApp from "../pages/MobilApp/MobilApp";
+import ListId from "../components/Carousel_list/ListId";
+import AllList from "../pages/AllList/AllList";
 
 export const router = createBrowserRouter([
   {
@@ -40,6 +54,22 @@ export const router = createBrowserRouter([
       { path: "audio/:id", element: <AudioId /> },
       { path: "rasmlar", element: <Photo /> },
       { path: "rasmlar/:id", element: <PhotoId /> },
+      { path: "fiqh", element: <Fiqh /> },
+      { path: "aqida", element: <Aqida /> },
+      { path: "quran", element: <Quran /> },
+      { path: "tafsir", element: <Tafsir /> },
+      { path: "mojiza", element: <Mojiza /> },
+      { path: "ayollar", element: <Ayollar /> },
+      { path: "islom-tarixi", element: <IslomTarixi /> },
+      { path: "ulug-siymolar", element: <UlugSiymolar /> },
+      { path: "siyrat", element: <Siyrat /> },
+      { path: "rivoyatlar", element: <Rivoyatlar /> },
+      { path: "savol-javob", element: <Savollar /> },
+      { path: "privacy-policy", element: <MobilApp /> },
+      { path: "listid/:id", element: <ListId /> },
+      { path: "lists", element: <AllList /> },
+
+
     ],
   },
 ]);

@@ -51,16 +51,18 @@ function Audio() {
   return (
     <div className="container audio_page">
       <div className="audio_layout">
-        <Tabs
-          className="video_tabs"
-          tabPosition="left"
-          activeKey={avtiveaudio}
-          onChange={(key) => setActiveaudio(key)}
-          items={audiocategories?.map((item) => ({
-            label: item?.name?.uz,
-            key: String(item?.id),
-          }))}
-        />
+        <div className="video_sidebar">
+          <Tabs
+            className="video_tabs"
+            tabPosition="left"
+            activeKey={avtiveaudio}
+            onChange={(key) => setActiveaudio(key)}
+            items={audiocategories?.map((item) => ({
+              label: item?.name?.uz,
+              key: String(item?.id),
+            }))}
+          />
+        </div>
 
         <div className="audio_wrapper">
           {audio?.map((item) => (
@@ -80,7 +82,7 @@ function Audio() {
               </div>
 
               <div className="audio_text">
-                <span className="audio_title">{item?.title?.uz}</span>
+                <span className="audio_text_title">{item?.title?.uz}</span>
 
                 <div className="audio_date">
                   <span>Views: {item?.views}</span>

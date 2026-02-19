@@ -5,14 +5,13 @@
   box-shadow: 0 10px 10px -10px;
   height: auto;
   overflow: hidden;
-  position: relative !important;
+  /* position: relative !important; */
   padding: 10px;
 }
 
 .ant-layout-content {
   padding: 0 !important;
 }
-
 
 .header_logo img {
   width: 120px;
@@ -62,9 +61,8 @@
   font-family: "Inter", sans-serif;
   font-weight: 500;
   color: #004c44;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.2;
-  flex: unset;
 }
 
 .link_right {
@@ -75,12 +73,13 @@
 }
 .all_left {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 
 .header_social_wrapper {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   height: 80px;
   background-color: #004c44;
   opacity: 0.8;
@@ -90,7 +89,7 @@
   top: 0;
   right: 0;
   /* width: 100%; */
-  width: 75%;
+  width: 70%;
   /* max-width: 75%; */
 }
 .header_social {
@@ -112,25 +111,27 @@
 .all_wrapper {
   display: flex;
   align-items: center;
+  /* gap: 130px; */
   justify-content: space-between;
-  gap: 130px;
   position: relative;
   bottom: 10px;
-  left:10px
+  left: 10px;
   /* z-index: 100; */
 }
 
 .all_right {
-  width: 100%;
+  width: 70%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 80px;
 }
 
 .navbar_link_wrapper {
   display: flex;
+  width: 100%;
   gap: 20px;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   margin-top: 20px;
 }
 

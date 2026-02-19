@@ -68,8 +68,6 @@ export const router = createBrowserRouter([
       { path: "privacy-policy", element: <MobilApp /> },
       { path: "listid/:id", element: <ListId /> },
       { path: "lists", element: <AllList /> },
-
-
     ],
   },
 ]);

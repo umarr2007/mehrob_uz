@@ -9,7 +9,6 @@ export default function AsmaulHusna() {
   const [list, setList] = useState([]);
   const [loading, setLoading] = useState(true);
   const [selectedItem, setSelectedItem] = useState(null);
-  const [modalVisible, setModalVisible] = useState(false);
 
   const getImageUrl = (uuid) =>
     uuid ? `https://sofft.uz/api/v1/references/download/${uuid}` : "";

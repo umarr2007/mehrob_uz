@@ -14,9 +14,11 @@
     "antd": "^6.0.0",
     "axios": "^1.13.2",
     "dayjs": "^1.11.19",
+    "i18next": "^25.8.11",
     "react": "^19.2.0",
     "react-country-flag": "^3.1.0",
     "react-dom": "^19.2.0",
+    "react-i18next": "^16.5.4",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.9.6",
     "swiper": "^12.1.0"
